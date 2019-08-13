@@ -72,9 +72,6 @@ class GamePainter extends CustomPainter {
         ParagraphConstraints pc = ParagraphConstraints(width: node.rect.width);
         Paragraph paragraph = pb.build()..layout(pc);
 
-        print(paragraph.width);
-        print(paragraph.height);
-
         Offset offset = Offset(node.rect.left,
             node.rect.top + node.rect.height / 2 - paragraph.height / 2);
         if (hitNodeList != null && hitNodeList.contains(node)) {
